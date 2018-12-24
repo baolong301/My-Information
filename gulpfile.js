@@ -16,12 +16,15 @@ taskList.forEach(function(taskFile) {
 gulp.task('default', function(callback) {
     runSequence(
         'clean',
+        'copy-img',
+        'copy-fonts',
         'concat-css',
         'concat-js',
         'create-js',
         'create-css',
         'create-html',
         'watch',
+        'autorefixer',
         'browser-sync',
         callback
     );
@@ -29,6 +32,8 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
     runSequence(
         'clean',
+        'copy-img',
+        'copy-fonts',
         'concat-css',
         'concat-js',
         'create-js',
