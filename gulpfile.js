@@ -24,7 +24,6 @@ gulp.task('default', function(callback) {
         'create-css',
         'create-html',
         'watch',
-        'autorefixer',
         'browser-sync',
         callback
     );
