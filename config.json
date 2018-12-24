@@ -1,0 +1,16 @@
+{
+    "config": {
+        "favicondist": "./favicon/",
+        "title": "Gulp App by FullStack Vietnam",
+        "author": {
+            "email": "lelacbinh3107@gmail.com",
+            "name": "LacBinh",
+            "phone": "0868227257",
+            "link": "https://www.facebook.com/lacbinh.le",
+            "coding": "Coding by Lac Binh"
+        },
+        "license": "MIT",
+        "name": "Lac Binh Apps",
+        "version": "1.0"
+    }
+}

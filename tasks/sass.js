@@ -15,7 +15,7 @@ module.exports = function(gulp, $, browserSync) {
             .pipe($.sourcemaps.init())
             .pipe($.sass().on('error', function(err) {
                 $.util.log(err);
-            }).on('error', $.notify.onError(defaultNotification)))
+            }))
             .pipe($.sourcemaps.write(''))
             .pipe(gulp.dest('./dist/css'))
             .pipe(browserSync.stream())
