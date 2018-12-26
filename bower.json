@@ -23,6 +23,7 @@
     "font-awesome": "^5.6.1",
     "popper.js": "^1.14.6",
     "animate.css": "^3.7.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "k-sass-core": "^6.0.4"
   }
 }
