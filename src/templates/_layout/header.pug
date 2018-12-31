@@ -2,4 +2,22 @@ header
 	.container-fluid
 		.row
 			.col.block-logo
-				img.logo.img-fluid.animated(src="../img/my-logo.png", alt="LB-logo")
+				nav.navbar.navbar-expand-lg.navbar-light
+					img.logo.img-fluid.animated(src="../img/my-logo.png", alt="LB-logo")
+					//- Đây là nút sẽ hiển thị trong mobile
+					button.animated.navbar-toggler(type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation")
+						span.fa.fa-bars
+					#fullStackMenu.collapse.navbar-collapse.thanh-nav
+						//- Thuộc tính '.mr-auto' này sẽ đẩy me nu về bên phải 
+						.mr-auto
+						ul.navbar-nav
+							li.nav-item
+								a.nav-link(href="javascript:avoid(0)")
+									| Trang chủ
+							li.nav-item
+								a.nav-link(href="javascript:avoid(0)") Thư Viện
+							li.nav-item
+								a.nav-link(href="javascript:avoid(0)") Dự Án
+							li.nav-item
+								a.nav-link(href="javascript:avoid(0)") CV
+			

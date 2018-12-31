@@ -7,40 +7,44 @@ var runSequence = require('run-sequence');
 var taskPath = './tasks/';
 var taskList = require('fs').readdirSync(taskPath);
 // Load tất cả các task
-taskList.forEach(function(taskFile) {
+taskList.forEach(function (taskFile) {
     require(taskPath + taskFile)(gulp, plugins, browserSync);
 });
 
-
 // Lệnh mặc định của Gulp
-gulp.task('default', function(callback) {
-    runSequence(
-        'clean',
-        'copy-img',
-        'copy-fonts',
-        'concat-css',
-        'concat-js',
-        'create-js',
-        'create-css',
-        'create-html',
-        'watch',
-        'browser-sync',
-        callback
-    );
+gulp.task('default', function (callback) {
+	runSequence(
+		'clean',
+		'copy-img',
+		'copy-fonts',
+		'copy-favicon',
+		'concat-css',
+		'concat-js',
+		'tao-sass',
+		'tao-js',
+		'tao-html',
+		'watch',
+		'browser-sync',
+		callback
+  );
 });
-gulp.task('build', function(callback) {
-    runSequence(
-        'clean',
-        'copy-img',
-        'copy-fonts',
-        'concat-css',
-        'concat-js',
-        'create-js',
-        'create-css',
-        'create-html',
-        'watch',
-        'autorefixer',
-        'browser-sync',
-        callback
-    );
+gulp.task('build', function (callback) {
+	runSequence(
+		'clean',
+		'copy-img',
+		'copy-fonts',
+		'copy-favicon',
+		'concat-css',
+		'concat-js',
+		'tao-sass',
+		'tao-js',
+		'tao-html',
+		// Xử lý Production
+		'html-min',
+		'css-min',
+		'js-min',
+		'autoprefixer',
+		'browser-sync',
+		callback
+  );
 });

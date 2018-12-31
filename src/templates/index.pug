@@ -1,20 +1,22 @@
 extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
 block variables
-    - var title = "Home"
-    - var description = "Welcom to my website"
-    
+	- var title = 'Home'
+	- var description = 'My Website'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
 block body
-    h1 He ho ho
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
-    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem non assumenda, voluptatum ad, excepturi iure nobis illo odit, animi nihil exercitationem. Doloribus reiciendis aliquam tempore molestiae odio voluptates sapiente consequuntur!
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	.container
+		.row
+			.col
+				h1 Le Lac Binh
+				small Young Developer
+				p Đang là sinh viên năm 2 của trường cao đẳng FPT polytechnic, với một ước mơ mãnh liệt sẽ trở thành một Website Developer tôi sẽ cố gắng hết sức mình để đạt được ước mơ đó trong vòng 5 năm nữa. Nhất định 10 năm sau tôi có thể tự tin kể về những thành công của mình cho người thầy mà tôi kính trọng nhất.
+			.col
+				figure
+					img(src="../img/my-photo.png", alt="https://scontent.fsgn6-1.fna.fbcdn.net/v/t1.0-0/p206x206/44893961_1000810096792554_3741226139008368640_n.jpg?_nc_cat=104&_nc_ht=scontent.fsgn6-1.fna&oh=5d6f6201e3a82f0a8fc3d72b5767c6a2&oe=5CD22077").my-photo
+					figcaption
+						h6 Lê Lạc Bình (2018)

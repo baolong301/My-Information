@@ -1,11 +1,20 @@
-# My-Information
-Trang Website về thông tin cá nhân của tôi
-Coding by: Lac Binh
-    Tel: 08.68.22.7257
-    Email: lelacbinh3107@gmail.com
-    URL: https://www.facebook.com/lacbinh.le
-    FullStack Vietnam: https://fullstackvietnam.com/
+```
+    $$$$$$$\   $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  $$\   $$\ $$\     $$\ $$$$$$$$\ $$\   $$\
+    $$  __$$\ $$  __$$\ $$  __$$\ $$$\  $$ |$$  __$$\ $$ |  $$ |\$$\   $$  |$$  _____|$$$\  $$ |
+    $$ |  $$ |$$ /  $$ |$$ /  $$ |$$$$\ $$ |$$ /  \__|$$ |  $$ | \$$\ $$  / $$ |      $$$$\ $$ |
+    $$$$$$$\ |$$$$$$$$ |$$ |  $$ |$$ $$\$$ |$$ |$$$$\ $$ |  $$ |  \$$$$  /  $$$$$\    $$ $$\$$ |
+    $$  __$$\ $$  __$$ |$$ |  $$ |$$ \$$$$ |$$ |\_$$ |$$ |  $$ |   \$$  /   $$  __|   $$ \$$$$ |
+    $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |  $$ |$$ |  $$ |    $$ |    $$ |      $$ |\$$$ |
+    $$$$$$$  |$$ |  $$ | $$$$$$  |$$ | \$$ |\$$$$$$  |\$$$$$$  |    $$ |    $$$$$$$$\ $$ | \$$ |
+    \_______/ \__|  \__| \______/ \__|  \__| \______/  \______/     \__|    \________|\__|  \__|
 
+    Coding by: Bao Nguyen
+    Tel: 0.96.96.89.89.3
+    Email: baonguyenyam@gmail.com
+    URL: fb.com/pham.nguyen.bao.nguyen,
+    baonguyenyam.github.io/cv
+    FullStack Vietnam: https://fullstackvietnam.com/
+```
 # Cài đặt
 
 > npm i 
@@ -21,6 +30,10 @@ Cài đặt Components
 # Chạy dự án 
 
 > npm start
+
+# Chạy Production 
+
+> gulp build --production
 
 # Cấu hình
 

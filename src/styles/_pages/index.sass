@@ -1,0 +1,37 @@
+main
+	background-image: url('../img/last-background.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: bottom left
+	.container
+		padding-top: 3rem
+		.row
+			.col
+				h1
+					font-weight: bold
+				small
+					text-decoration: underline
+					color: #0000007a
+				p
+					color: #0000007a
+		.row
+			.col
+				figure
+					align-items: right
+					img
+						min-width: 15rem
+						max-width: 18rem
+					figcaption
+						h6
+							color: #0000007a
+							text-align: center
+	+media-breakpoint-up(md)
+		min-height: 100rem
+		.container
+			.row
+				.col
+					figure
+						img
+							min-width: initial
+							max-width: initial
+							width: 100%
